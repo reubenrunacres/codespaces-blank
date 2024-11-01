@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Stranger Experiment - Connect with like-minded guys through shared interests and activities. Build meaningful friendships in your area.">
+    <title>The Stranger Experiment | Connect Through Activities</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #2d3748;
+            background: #f7fafc;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #4299e1 0%, #667eea 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            font-weight: 800;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            opacity: 0.9;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 4rem 0;
+            background: white;
+        }
+
+        .feature {
+            padding: 2rem;
+            border-radius: 10px;
+            background: #f8fafc;
+            text-align: center;
+        }
+
+        .feature h3 {
+            color: #2d3748;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .feature p {
+            color: #4a5568;
+        }
+
+        .cta-section {
+            background: #2d3748;
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .signup-form {
+            max-width: 500px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #4a5568;
+            font-weight: 500;
+            text-align: left;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        button {
+            width: 100%;
+            padding: 1rem;
+            background: #4299e1;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #3182ce;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            padding: 4rem 0;
+            background: #f8fafc;
+            text-align: center;
+        }
+
+        .stat {
+            padding: 1rem;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #4299e1;
+            margin-bottom: 0.5rem;
+        }
+
+        .activities {
+            padding: 4rem 0;
+            background: white;
+        }
+
+        .activities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .activity-card {
+            background: #f8fafc;
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        footer {
+            background: #2d3748;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 0 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="container">
+            <h1>The Stranger Experiment</h1>
+            <p>Connect with like-minded guys through shared interests and activities. Build meaningful friendships in your area.</p>
+            <button onclick="document.querySelector('.signup-form').scrollIntoView({behavior: 'smooth'})">Join the Waitlist</button>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="container">
+            <div class="stat">
+                <div class="stat-number">61%</div>
+                <p>of men report feeling lonely</p>
+            </div>
+            <div class="stat">
+                <div class="stat-number">28%</div>
+                <p>of men under 30 have zero close friends</p>
+            </div>
+            <div class="stat">
+                <div class="stat-number">2x</div>
+                <p>more likely to build lasting friendships through shared activities</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="feature">
+                <h3>Interest-Based Matching</h3>
+                <p>Connect with guys who share your hobbies and interests</p>
+            </div>
+            <div class="feature">
+                <h3>Local Activities</h3>
+                <p>Discover and join group activities happening in your area</p>
+            </div>
+            <div class="feature">
+                <h3>Real Connections</h3>
+                <p>Build genuine friendships through shared experiences</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="activities">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 2rem;">Popular Activities</h2>
+            <div class="activities-grid">
+                <div class="activity-card">
+                    <h3>Sports & Fitness</h3>
+                    <p>Basketball, hiking, gym sessions</p>
+                </div>
+                <div class="activity-card">
+                    <h3>Gaming & Tech</h3>
+                    <p>LAN parties, coding meetups</p>
+                </div>
+                <div class="activity-card">
+                    <h3>Food & Drinks</h3>
+                    <p>BBQ meetups, coffee runs</p>
+                </div>
+                <div class="activity-card">
+                    <h3>Outdoor Adventures</h3>
+                    <p>Camping, rock climbing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Join the Waitlist</h2>
+            <p>Be among the first to try The Stranger Experiment in your area</p>
+            <form class="signup-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required placeholder="Your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required placeholder="your@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="location">City</label>
+                    <input type="text" id="location" required placeholder="Your city">
+                </div>
+                <div class="form-group">
+                    <label for="interests">Main Interests</label>
+                    <select id="interests" required>
+                        <option value="">Select your main interest</option>
+                        <option value="sports">Sports & Fitness</option>
+                        <option value="gaming">Gaming & Tech</option>
+                        <option value="food">Food & Drinks</option>
+                        <option value="outdoor">Outdoor Adventures</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <button type="submit">Join Waitlist</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 The Stranger Experiment. Building stronger connections for young men.</p>
+        </div>
+    </footer>
+</body>
+</html>
